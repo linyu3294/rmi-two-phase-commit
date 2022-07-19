@@ -1,0 +1,6 @@
+org/server/ICoordinator.class
+org/client/Client.class
+org/client/IClient.class
+org/server/Coordinator.class
+org/server/IServer.class
+org/server/Server.class

@@ -1,0 +1,91 @@
+/Users/gremlinweekend/Library/Java/JavaVirtualMachines/openjdk-18.0.1.1/Contents/Home/bin/java -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64677:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -classpath /Users/gremlinweekend/Documents/cs6650-distributed-system/project-3-two-phase-commit/target/classes org.cs6650.Client.Client 10001 10002 10003 10004 10005
+Client Program starting... Received 5 arguments.
+
+
+The server stores a map of key and value pairs on our collection of servers.
+Please instruct one of our servers what to do next by choosing from one of the following commands.
+    1) <SERVER No.> PUT <KEY> <VALUE>
+    2) <SERVER No.> GET <KEY>
+    3) <SERVER No.> DELETE <KEY>
+Note that you can quit the program by typing the word 'EXIT'.
+
+19-07-2022 12:51:44 | Type here  :   100 DELETE 5
+The most recent user command had incorrect format!
+Please check the format and re-enter a new command!
+
+
+The server stores a map of key and value pairs on our collection of servers.
+Please instruct one of our servers what to do next by choosing from one of the following commands.
+    1) <SERVER No.> PUT <KEY> <VALUE>
+    2) <SERVER No.> GET <KEY>
+    3) <SERVER No.> DELETE <KEY>
+Note that you can quit the program by typing the word 'EXIT'.
+
+19-07-2022 12:51:52 | Type here  :   10001 DELETE 6
+
+response: Coordinator at port: 10000 says Hello!Coordinator is ready to start the 2PC process.
+Coordinator Succeeded to affirm that all servers prepared for request ac1111ee-5633-48ff-8fe0-122d1529ea9f.
+Coordinator failed to commit servers for request ac1111ee-5633-48ff-8fe0-122d1529ea9f.
+java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "list" is null
+
+
+The server stores a map of key and value pairs on our collection of servers.
+Please instruct one of our servers what to do next by choosing from one of the following commands.
+    1) <SERVER No.> PUT <KEY> <VALUE>
+    2) <SERVER No.> GET <KEY>
+    3) <SERVER No.> DELETE <KEY>
+Note that you can quit the program by typing the word 'EXIT'.
+
+19-07-2022 12:52:16 | Type here  :   10001 PUT ere
+The most recent user command had incorrect format!
+Please check the format and re-enter a new command!
+
+
+The server stores a map of key and value pairs on our collection of servers.
+Please instruct one of our servers what to do next by choosing from one of the following commands.
+    1) <SERVER No.> PUT <KEY> <VALUE>
+    2) <SERVER No.> GET <KEY>
+    3) <SERVER No.> DELETE <KEY>
+Note that you can quit the program by typing the word 'EXIT'.
+
+19-07-2022 12:52:50 | Type here  :   10001 PUT ere ere
+
+response: Coordinator at port: 10000 says Hello!Coordinator is ready to start the 2PC process.
+Coordinator Succeeded to affirm that all servers prepared for request e86dac5e-2b67-4aa8-b720-df8c4cb38b18.
+Coordinator Succeeded to affirm that all servers committed for request e86dac5e-2b67-4aa8-b720-df8c4cb38b18.
+
+
+The server stores a map of key and value pairs on our collection of servers.
+Please instruct one of our servers what to do next by choosing from one of the following commands.
+    1) <SERVER No.> PUT <KEY> <VALUE>
+    2) <SERVER No.> GET <KEY>
+    3) <SERVER No.> DELETE <KEY>
+Note that you can quit the program by typing the word 'EXIT'.
+
+19-07-2022 12:52:59 | Type here  :   10001 GET ere
+
+response: ere
+
+
+The server stores a map of key and value pairs on our collection of servers.
+Please instruct one of our servers what to do next by choosing from one of the following commands.
+    1) <SERVER No.> PUT <KEY> <VALUE>
+    2) <SERVER No.> GET <KEY>
+    3) <SERVER No.> DELETE <KEY>
+Note that you can quit the program by typing the word 'EXIT'.
+
+19-07-2022 12:54:13 | Type here  :   10001 DELETE ere
+
+response: Coordinator at port: 10000 says Hello!Coordinator is ready to start the 2PC process.
+Coordinator Succeeded to affirm that all servers prepared for request 35691de7-bcc7-4302-a772-c24d9d84864f.
+Coordinator Succeeded to affirm that all servers committed for request 35691de7-bcc7-4302-a772-c24d9d84864f.
+
+
+The server stores a map of key and value pairs on our collection of servers.
+Please instruct one of our servers what to do next by choosing from one of the following commands.
+    1) <SERVER No.> PUT <KEY> <VALUE>
+    2) <SERVER No.> GET <KEY>
+    3) <SERVER No.> DELETE <KEY>
+Note that you can quit the program by typing the word 'EXIT'.
+
+19-07-2022 12:54:33 | Type here  :

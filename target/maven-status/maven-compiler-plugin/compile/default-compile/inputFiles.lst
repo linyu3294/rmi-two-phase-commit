@@ -1,0 +1,6 @@
+/Users/gremlinweekend/Documents/cs6650-distributed-system/rmi-two-phase-commit/src/main/java/org/client/Client.java
+/Users/gremlinweekend/Documents/cs6650-distributed-system/rmi-two-phase-commit/src/main/java/org/server/IServer.java
+/Users/gremlinweekend/Documents/cs6650-distributed-system/rmi-two-phase-commit/src/main/java/org/server/Coordinator.java
+/Users/gremlinweekend/Documents/cs6650-distributed-system/rmi-two-phase-commit/src/main/java/org/server/ICoordinator.java
+/Users/gremlinweekend/Documents/cs6650-distributed-system/rmi-two-phase-commit/src/main/java/org/client/IClient.java
+/Users/gremlinweekend/Documents/cs6650-distributed-system/rmi-two-phase-commit/src/main/java/org/server/Server.java
