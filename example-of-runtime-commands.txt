@@ -1,4 +1,4 @@
-/Users/gremlinweekend/Library/Java/JavaVirtualMachines/openjdk-18.0.1.1/Contents/Home/bin/java -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64677:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -classpath /Users/gremlinweekend/Documents/cs6650-distributed-system/project-3-two-phase-commit/target/classes org.cs6650.Client.Client 10001 10002 10003 10004 10005
+
 Client Program starting... Received 5 arguments.
 
 
