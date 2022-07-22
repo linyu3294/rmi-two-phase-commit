@@ -15,8 +15,12 @@ import org.server.IServer;
 import java.util.UUID;
 
 /**
- * To build the Coordinator, please find instructions in Either the README.md or in Coordinator.java
- * Running the coordinator will spin up the 5 servers.
+ * To Build the Client, use maven.
+ * The pom.xml is attached. When installed, the program will produce two jars in target.
+ * One for the Client.jar and the other for Coordinator.jar.
+ * When starting the program, make sure to run the Coordinator.jar first.
+ * After the Coordinator.jar is running, next to run the Client, find the Client.jar in target.
+ * Run java -jar Client.jar <port1 num> <port2 num> ... <port5 num>
  */
 public class Client implements IClient {
 

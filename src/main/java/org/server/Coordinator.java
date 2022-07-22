@@ -18,6 +18,14 @@ import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
+/**
+ * To Build the Coordinator, use maven.
+ * The pom.xml is attached. When installed, the program will produce two jars in target.
+ * One for the Client.jar and the other for Coordinator.jar.
+ * When starting the program, make sure to run the Coordinator.jar first.
+ * To run the Coordinator.jar, find the Coordinator.jar in target.
+ * Run java -jar Coordinator.jar <port1 num> <port2 num> ... <port5 num>
+ */
 public class Coordinator extends Server implements ICoordinator {
 
   private final String programCommandLineExpression =
@@ -28,7 +36,6 @@ public class Coordinator extends Server implements ICoordinator {
 
   ConcurrentHashMap<Integer, List<UUID>> serverPreparationResponses = new ConcurrentHashMap<>();
   ConcurrentHashMap<Integer, List<UUID>> serverCommitResponses = new ConcurrentHashMap<>();
-//  private Map<Integer, Registry> serverRegistries = new HashMap<>();
 
   public Coordinator(Integer portNumber) {
     super(portNumber);
@@ -216,7 +223,6 @@ public class Coordinator extends Server implements ICoordinator {
             throw new RuntimeException(e);
           }
           this.serverStubs.put(portNumber, server);
-//          this.serverRegistries.put(portNumber, registry);
         });
   }
 

@@ -9,6 +9,10 @@ import java.util.Set;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * Running Coordinator.jar will spin up 5 individual servers. Please find instructions to run
+ * Coordinator in either Coordinator.java or in README.md.
+ */
 public class Server extends Thread implements IServer {
 
 
@@ -41,7 +45,9 @@ public class Server extends Thread implements IServer {
       throws RemoteException, NotBoundException {
     // GET operations does not need 2PC
     if (operation.equalsIgnoreCase("GET")) {
-      return store.getOrDefault(key, "The value you queried is NOT Currently In store.");
+      return store.getOrDefault(key, ""
+          + "\nThe value you queried is NOT Currently In store."
+          + "\nAborting Prepare and Commit Phase.");
     }
     // Get the registry of the coordinator at port hardcoded as 10000
     Registry registry = LocateRegistry.getRegistry("LOCALHOST", 10000);
